@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: aliceblue;
+}
+.btn-open{
+    padding: 15px 25px;
+    background: darkgreen;
+    color: aliceblue;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 160px;
+}
+.window{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.68);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.window{
+    display: none;
+
+}
+.modal{
+    width: 60%;
+    height: 60vh;
+background: white;
+    border-radius: 10px;
+    position: relative;
+}
+.close{
+    color: darkgreen;
+    font-family: sans-serif;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+
+}
+.modal-block{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.img-one {
+    border-radius: 100%;
+    width: 163px;
+    height: 163px;
+    transition: .4s;
+}
+.img-two{
+    width: 197px;
+    height: 201px;
+    transition: .4s;
+}
+.img-three{
+    width: 242px;
+    height: 236px;
+    transition: .4s;
+}
+.modal-block-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.modal-block-btns button{
+    padding: 15px 25px;
+    background: #D9D9D9;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+.modal-block-btns button:hover{
+    background:rgba(4,206,37,0.47) ;
+}
+@keyframes modal {
+  0%{
+      transform: scale(0);
+  }
+    
+}
